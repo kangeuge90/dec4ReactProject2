@@ -1,0 +1,17 @@
+.recipeContainer {
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw; */
+}
+
+.recipeContainer img {
+    height: 200px;
+    width: 200px;
+}
+
+.detailsContainer img {
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+}

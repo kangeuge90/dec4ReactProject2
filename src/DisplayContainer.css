@@ -1,0 +1,17 @@
+.categoryPicturesContainer {
+    display: flex;
+    padding: 10px;
+    justify-content: space-around;
+}
+
+.categoryPicture {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8px;
+}
+
+.categoryPicture img {
+    height: 16vw;
+    width: 16vw;
+}

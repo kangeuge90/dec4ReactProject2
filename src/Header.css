@@ -1,0 +1,40 @@
+.searchBarContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 6px;
+    align-items: baseline;
+}
+
+.searchBarContainer img {
+    height: 20px;
+    width: 20px;
+    margin: 6px;
+}
+
+.categoryButtons button {
+    padding: 6px;
+    margin: 6px;
+    background-color: white;
+    /* border: solid #28CF75 2px; */
+}
+
+h1 {
+    font-family: 'Corinthia', cursive;
+    font-family: 'Petit Formal Script', cursive;
+    color: #FE6B35;
+}
+
+hr {
+    /* color: #FE6B35; */
+}
+
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #A0EDff;
+    /* background-color: #EBF875; */
+    /* background-color: #28CF75; */
+    /* background-color: #FE6B35; */
+}
