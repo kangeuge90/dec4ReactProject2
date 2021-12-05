@@ -32,7 +32,7 @@ function Recipe({query}: Props) {
 
                     {/* PLACEHOLDER UNTIL URL LINK MADE---------*/}
                     {/* <Link to={item.url}>Full Recipe</Link> */}
-                    <a href=''>Full recipe  </a>
+                    <a href={item.url}>Full recipe  </a>
                     <p>  </p>
                     {/* PLACEHOLDER UNTIL URL LINK MADE---------*/}
 

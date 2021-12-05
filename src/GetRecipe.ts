@@ -14,6 +14,7 @@ export interface RecipeItem {
     cuisineType: string;
     thumbNail: string;
     // favorite: boolean;
+    url: string;
 }
 
 
