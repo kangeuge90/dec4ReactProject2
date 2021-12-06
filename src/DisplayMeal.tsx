@@ -13,8 +13,8 @@ function DisplayMeal() {
 
     return(
         <div>
-            <div className="categoryPicturesContainer" onClick = {() => {setQuery('breakfast')}}>
-                <div className="categoryPicture">
+            <div className="categoryPicturesContainer">
+                <div className="categoryPicture" onClick = {() => {setQuery('breakfast')}}>
                     <h3>Breakfast</h3>
                     <img src={breakfast} alt="breakfast food"/>
                 </div>
