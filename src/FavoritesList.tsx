@@ -21,14 +21,16 @@ function FavoritesList() {
                 }
             </table>
 
-            <Recipe onSubmit={(recipeItem) => {
-                setRecipeItems([...recipeItems, recipeItem])
-            }} /> 
+
         </>
     )
 }
 
 export default FavoritesList;
+
+            {/* <Recipe onSubmit={(recipeItem) => {
+                setRecipeItems([...recipeItems, recipeItem])
+            }} />  */}
 
 // export default interface RecipeItem {
 //     hits: string;

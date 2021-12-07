@@ -6,10 +6,41 @@
     align-items: baseline;
 }
 
+.recimeLogo img {
+    width: 125px;
+    height: 125px;
+}
+
+.recimeTitle img {
+    width: 600px;
+    height: 300px;
+}
+
 .searchBarContainer img {
-    height: 20px;
-    width: 20px;
+    height: 150px;
+    width: 150px;
     margin: 6px;
+}
+
+.searchBar {
+    display: flex;
+    align-items: center;
+}
+
+.searchBar img {
+    height: 75px;
+    width: 150px;
+}
+
+.favoritesInnerSection {
+    display: flex;
+    flex-direction: row;
+}
+
+.favoritesInnerSection img {
+    margin: 8px;
+    height: 70px;
+    width: 70px;
 }
 
 

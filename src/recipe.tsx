@@ -2,7 +2,7 @@ import { useState, useEffect, useContext } from "react";
 import getRecipe from "./GetRecipe";
 import RecipeItem from "./InterfaceRecipeItem";
 import {Link} from 'react-router-dom';
-import favoritesHeart from './assets/favoritesHeart.png'
+import favoritesHeart from './assets/rmfavselected.png'
 import './recipe.css'
 import { useSearchParams } from "react-router-dom";
 import FavoritesContext from "./FavoritesContext";

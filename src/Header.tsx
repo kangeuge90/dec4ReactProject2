@@ -4,9 +4,13 @@ import DisplayAllergies from './DisplayAllergies'
 import DisplayDiet from './DisplayDiet'
 // import DisplayMeal from './DisplayMeal'
 import DisplayCuisine from './DisplayCuisine'
-import favoritesHeart from './assets/favoritesHeart.png'
+import favoritesHeart from './assets/rmfavselected.png'
 // import american from '../public/americanFood.jpg';
 import { Link, Navigate, useSearchParams } from 'react-router-dom'
+import ReciMeTitle from './assets/rmheader.png'
+import ReciMeLogo from './assets/rmlogo.png'
+import HomeButton from './assets/rmhome.png'
+import SearchText from './assets/rmsearch.png'
 
 function Header() {
     let [searchParams, setSearchParams] = useSearchParams();
@@ -52,7 +56,10 @@ function Header() {
 
     return (
         <div className="headerContainer">
-            <h1>ReciMe.com</h1>
+            <div className='titleContainer'>
+                <div className='recimeLogo'><img src={ReciMeLogo}></img></div>
+                <div className='recimeTitle'><img src={ReciMeTitle}></img></div>
+            </div>
             <form className="searchBarContainer" onSubmit={(e) => 
             {
                 e.preventDefault()
@@ -60,9 +67,11 @@ function Header() {
             }
 
             }>
-                <label className="searchBar">Search: </label><input value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
-                <Link to='/favorites'><img src={favoritesHeart}></img></Link>
-                <span>Favorites List</span>
+                <div className="searchBar"><img src={SearchText}></img><input value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
+                    <section className='favoritesSection'>
+                        <div className='favoritesInnerSection'><Link to='/favorites'><img src={HomeButton}></img><img src={favoritesHeart}></img></Link></div>
+                    </section>
+                </div>
                 {/* Style adjustments needed here, to make appearance of favorites icon + text more cohesive */}
             </form>
             <div className="categoriesContainer">
