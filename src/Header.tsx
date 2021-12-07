@@ -6,8 +6,17 @@ import DisplayDiet from './DisplayDiet'
 import DisplayCuisine from './DisplayCuisine'
 import favoritesHeart from './assets/favoritesHeart.png'
 // import american from '../public/americanFood.jpg';
+import { useSearchParams } from 'react-router-dom'
 
 function Header() {
+    let [searchParams, setSearchParams] = useSearchParams();
+    const setQuery = (q: string) => {
+        setSearchParams({ 'query': q })
+    }
+
+    let [searchQuery, setSearchQuery] = useState('')
+    // searchParams.get('query') default state
+
     const [cuisine, setCuisineOn] = useState(false)
     // const [meal, setMealOn] = useState(false)
     const [diet, setDietOn] = useState(false)
@@ -44,8 +53,14 @@ function Header() {
     return (
         <div className="headerContainer">
             <h1>ReciMe.com</h1>
-            <form className="searchBarContainer">
-                <label className="searchBar">Search: </label><input></input>
+            <form className="searchBarContainer" onSubmit={(e) => 
+            {
+                e.preventDefault()
+                setQuery(searchQuery)
+            }
+
+            }>
+                <label className="searchBar">Search: </label><input value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
                 <img src={favoritesHeart}></img> 
                 <br />
                 <span>Favorites List</span>

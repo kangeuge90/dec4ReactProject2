@@ -1,28 +1,38 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import getRecipe from "./GetRecipe";
-import { RecipeItem } from "./GetRecipe";
+import RecipeItem from "./InterfaceRecipeItem";
 import {Link} from 'react-router-dom';
 import favoritesHeart from './assets/favoritesHeart.png'
 import './recipe.css'
+import { useSearchParams } from "react-router-dom";
+import FavoritesContext from "./FavoritesContext";
 
-export interface Props {
-query: string;
-}
+// export interface Props {
+// query: string;
+// }
 
-function Recipe({query}: Props) {
+function Recipe() {
+    let [searchParams, setSearchParam] = useSearchParams();
+    const query = searchParams.get('query') || '' ;
+
     useEffect(() => {
         getRecipe(query).then(data => setRecipe(data));
         }, [query])
 
     const [recipe, setRecipe] = useState<RecipeItem[]>([])
-    
+    const {addFavorite} = useContext(FavoritesContext);
+
     return (
         <ul>
             {
            recipe.map((item, index) => 
-           <div className="recipeContainer" key={index}>
+           <form className="recipeContainer" key={index} onSubmit={(e) => {
+            e.preventDefault();
+            // onSubmit({ name, score });
+            // clear();
+        }}>
                <p>{item.hits}</p>
-               <p>{item.label}</p>
+               <p>{item.label}<button onClick={() => addFavorite(item)}className="favoritesButton"><img src={favoritesHeart} ></img></button></p>
                <p>Cuisine Type: {item.cuisineType}</p>
                <p>{item.healthLabels[0]}, {item.healthLabels[1]}, {item.healthLabels[2]}</p>
                <img src={item.thumbNail}></img>
@@ -36,10 +46,10 @@ function Recipe({query}: Props) {
                     <p></p>
                     {/* PLACEHOLDER UNTIL URL LINK MADE---------*/}
 
-                    <img src={favoritesHeart} ></img>
+
                     {/* May Move favoritesHeart next to the recipe title, for ease of use */}
                </div>
-           </div>)
+           </form>)
           
             
            }

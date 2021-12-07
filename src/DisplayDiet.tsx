@@ -6,14 +6,13 @@ import vegetarian from './assets/vegetarian.jpg';
 import kosher from './assets/kosher.png';
 import {useState} from 'react';
 import Recipe from './recipe';
+import { useSearchParams } from 'react-router-dom'
 
 function DisplayDiet() {
-    const [query, setQuery] = useState('');
-    // const [pesc, setPesc] = useState('');
-    // const [vegan, setVegan] = useState('');
-    // const [vegatarian, setVegatarian] = useState('');
-    // const [kosher, setKosher] = useState('');
-
+    let [searchParams, setSearchParams] = useSearchParams();
+    const setQuery = (q: string) => {
+        setSearchParams({ 'query': q })
+    }
     return(
         <div>
             <div className="categoryPicturesContainer">
@@ -39,9 +38,9 @@ function DisplayDiet() {
                 </div>
             </div>
             <hr></hr>
-            <div className='recipeList'>
+            {/* <div className='recipeList'>
                 <Recipe query={query}/>
-            </div>
+            </div> */}
         </div>
     )
 }

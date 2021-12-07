@@ -8,10 +8,13 @@ import asian from './assets/asianCuisine.jpg';
 // import getRecipe from './GetRecipe';
 import { useState } from 'react';
 import Recipe from './recipe';
+import { useSearchParams } from 'react-router-dom'
 
 function DisplayCuisine() {
-    const [query, setQuery] = useState('');
-
+    let [searchParams, setSearchParams] = useSearchParams();
+    const setQuery = (q: string) => {
+        setSearchParams({ 'query': q })
+    }
     return(
     <div>
         <div className="categoryPicturesContainer">
@@ -37,9 +40,9 @@ function DisplayCuisine() {
             </div>
         </div>    
         <hr></hr>    
-        <div className='recipeList'>
+        {/* <div className='recipeList'>
             <Recipe query={query}/>
-        </div>
+        </div> */}
     </div>
     )
 }

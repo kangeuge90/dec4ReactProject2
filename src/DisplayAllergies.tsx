@@ -6,10 +6,13 @@ import dairy from './assets/dairyFree.png';
 import soy from './assets/soyFree.png'
 import Recipe from './recipe' ;
 import {useState} from 'react';
+import { useSearchParams } from 'react-router-dom'
 
 function DisplayAllergies() {
-    const [query, setQuery] = useState('');
-
+    let [searchParams, setSearchParams] = useSearchParams();
+    const setQuery = (q: string) => {
+        setSearchParams({ 'query': q })
+    }
     return(
         <div>
             <div className="categoryPicturesContainer">
@@ -35,9 +38,9 @@ function DisplayAllergies() {
                 </div>
             </div>
             <hr></hr>
-            <div className='recipeList'>
+            {/* <div className='recipeList'>
                 <Recipe query={query}/>
-            </div>
+            </div> */}
         </div>
     )
 }

@@ -3,10 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import FavoritesContextProvider from './FavoritesContextProvider'
+import FavoriteContext from './FavoritesContext';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <FavoritesContextProvider>
+      <App />
+    </FavoritesContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

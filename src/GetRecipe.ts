@@ -1,21 +1,22 @@
 import axios from 'axios';
 import { type } from 'os';
 import { useState } from 'react';
+import RecipeItem from './InterfaceRecipeItem';
 
 export interface RecipeResponse {
     properties: {hits: RecipeItem[]};
 
 }
 
-export interface RecipeItem {
-    hits: string;
-    label: string;
-    healthLabels: string;
-    cuisineType: string;
-    thumbNail: string;
-    // favorite: boolean;
-    url: string;
-}
+// export interface RecipeItem {
+//     hits: string;
+//     label: string;
+//     healthLabels: string;
+//     cuisineType: string;
+//     thumbNail: string;
+//     // favorite: boolean;
+//     url: string;
+// }
 
 
 
