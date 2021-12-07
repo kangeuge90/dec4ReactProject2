@@ -39,21 +39,11 @@ function Recipe() {
                <div className="detailsContainer">
                     <Link to={item.label}>More Details</Link>
                     <p></p>
-
-                    {/* PLACEHOLDER UNTIL URL LINK MADE---------*/}
-                    {/* <Link to={item.url}>Full Recipe</Link> */}
                     <a target='_blank' href={item.url}>Full recipe</a>
                     <p></p>
-                    {/* PLACEHOLDER UNTIL URL LINK MADE---------*/}
-
-
-                    {/* May Move favoritesHeart next to the recipe title, for ease of use */}
                </div>
            </form>)
-          
-            
            }
-            
         </ul>
     )
 }

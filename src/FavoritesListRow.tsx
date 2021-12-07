@@ -4,6 +4,7 @@ function FavoritesListRow({ recipeItem: recipeItem }: { recipeItem: RecipeItem }
 
     function removeFavorite() {
         // slice out this entry
+        // NEEDS TO BE PUT IN FAVORITESCONTEXTPROVIDER
     }
 
 

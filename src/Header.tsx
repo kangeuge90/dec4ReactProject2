@@ -6,7 +6,7 @@ import DisplayDiet from './DisplayDiet'
 import DisplayCuisine from './DisplayCuisine'
 import favoritesHeart from './assets/favoritesHeart.png'
 // import american from '../public/americanFood.jpg';
-import { useSearchParams } from 'react-router-dom'
+import { Link, Navigate, useSearchParams } from 'react-router-dom'
 
 function Header() {
     let [searchParams, setSearchParams] = useSearchParams();
@@ -61,8 +61,7 @@ function Header() {
 
             }>
                 <label className="searchBar">Search: </label><input value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
-                <img src={favoritesHeart}></img> 
-                <br />
+                <Link to='/favorites'><img src={favoritesHeart}></img></Link>
                 <span>Favorites List</span>
                 {/* Style adjustments needed here, to make appearance of favorites icon + text more cohesive */}
             </form>
