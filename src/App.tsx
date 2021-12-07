@@ -16,7 +16,7 @@ function App() {
         <Routes>
           {/* <Route path="/more-details" element={<GetDetails />} /> */}
           <Route path="/favorites" element={<Favorites />} />
-          <Route path="*" element={<Navigate to="/"/>} />
+          {/* <Route path="*" element={<Navigate to="/"/>} /> */}
         </Routes>
         
     </div>
