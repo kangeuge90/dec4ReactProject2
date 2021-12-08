@@ -2,7 +2,7 @@ import { useState, useContext } from "react";
 import RecipeItem from "./InterfaceRecipeItem";
 import FavoritesContext from "./FavoritesContext";
 import favoritesHeartFalse from './assets/rmfavunselected.png'
-import favoritesHeartTrue from './assets/rmfavselected.png'
+import favoritesHeartTrue from './assets/rmfavselected2.png'
 import './recipe.css';
 import FullRecipeButton from './assets/fullrecipe.png'
 import MoreDetailsButton from './assets/moredetails.png'
@@ -37,9 +37,9 @@ const RecipeDetailItem = ({recipe}: IProps) => {
             <div className="recipeContainer">
             <p>{recipe.hits}</p>
                 <p>{recipe.label}
-                {favorites===false ? 
-                    <button onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartFalse} ></img></button> :
-                    <button onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartTrue} ></img></button>
+                {favorites===false
+                    ? <span onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartFalse} ></img></span>
+                    : <span onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartTrue} ></img></span>
                 }
                 </p>
                 <p>Cuisine Type: {recipe.cuisineType}</p>
