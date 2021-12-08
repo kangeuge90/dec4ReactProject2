@@ -1,0 +1,28 @@
+.favoritesListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 75vw; */
+}
+
+.favoritesListTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.favoriteListTitle img {
+    height: 150px;
+    width: 450px;
+}
+
+.iconContainer {
+    display: flex;
+    flex-direction: row;
+}
+
+.iconContainer {
+    height: 65px;
+    width: 65px;
+}

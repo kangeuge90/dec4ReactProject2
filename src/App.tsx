@@ -7,6 +7,7 @@ import Header from './Header';
 // import GetDetails from './GetDetails';
 // import Favorites from './Favorites';
 import FavoritesList from './FavoritesList';
+import Footer from './Footer';
 
 function App() {
 
@@ -19,7 +20,9 @@ function App() {
           <Route path='/' element={<Recipe />} />
           <Route path="/favoritesList" element={<FavoritesList />} />
         </Routes>
-        
+
+      <Footer />
+
     </div>
     
     </Router>
