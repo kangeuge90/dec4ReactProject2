@@ -37,7 +37,6 @@ function DisplayMeal() {
                     <img src={dessert} alt="dessert food"></img>
                 </div>
             </div>
-            <hr></hr>
             {/* <div className='recipeList'>
                 <Recipe query={query}/>
             </div> */}

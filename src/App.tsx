@@ -5,11 +5,10 @@ import Recipe from './recipe';
 import { BrowserRouter as Router, Route, Routes, Navigate, useSearchParams } from 'react-router-dom';
 import Header from './Header';
 // import GetDetails from './GetDetails';
-import Favorites from './Favorites';
+// import Favorites from './Favorites';
+import FavoritesList from './FavoritesList';
 
 function App() {
-
-
 
   return (
     <Router>
@@ -18,7 +17,7 @@ function App() {
       
         <Routes>
           <Route path='/' element={<Recipe />} />
-          <Route path="/favorites" element={<Favorites />} />
+          <Route path="/favoritesList" element={<FavoritesList />} />
         </Routes>
         
     </div>

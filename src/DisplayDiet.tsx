@@ -37,7 +37,6 @@ function DisplayDiet() {
                     <img src={vegetarian} alt="vegetarian diet"></img>
                 </div>
             </div>
-            <hr></hr>
             {/* <div className='recipeList'>
                 <Recipe query={query}/>
             </div> */}

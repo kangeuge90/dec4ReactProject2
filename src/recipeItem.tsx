@@ -1,8 +1,11 @@
 import { useState, useContext } from "react";
 import RecipeItem from "./InterfaceRecipeItem";
 import FavoritesContext from "./FavoritesContext";
-import favoritesHeart from './assets/favoritesHeart.png'
+import favoritesHeart from './assets/rmfavselected.png'
 import './recipe.css';
+import FullRecipeButton from './assets/fullrecipe.png'
+import MoreDetailsButton from './assets/moredetails.png'
+
 
 interface IProps {
     recipe: RecipeItem
@@ -23,10 +26,11 @@ const RecipeDetailItem = ({recipe}: IProps) => {
                 <p>Cuisine Type: {recipe.cuisineType}</p>
             <p>{recipe.healthLabels[0]}, {recipe.healthLabels[1]}, {recipe.healthLabels[2]}</p>
               <img src={recipe.thumbNail}></img>
-              <p><a target='_blank' href={recipe.url}>Full recipe</a></p>
-                    
-            <button type="button"  onClick={showMoreClickHandler}>Read more</button>
-            {areDetailsOpen && details}
+                <div className="detailsContainer">
+                    <a target='_blank' href={recipe.url}><img src={FullRecipeButton}></img></a>
+                    <img onClick={showMoreClickHandler} src={MoreDetailsButton}></img>
+                    {areDetailsOpen && details}
+                </div>
             </div>
         </div>
     )

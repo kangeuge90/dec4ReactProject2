@@ -3,16 +3,12 @@ import RecipeItem from './InterfaceRecipeItem';
 // import PlayerForm from './PlayerForm';
 // import players from './players';
 import FavoritesListRow from './FavoritesListRow';
+import Recipe from './recipe';
 
 function FavoritesList() {
-
     const [recipeItems, setRecipeItems] = useState<RecipeItem[]>([
         { label: "Peyton Manning", healthLabels: 'healthy', cuisineType: "American" }
     ]);
-
-    // function removeFavorite() {
-    //     // slice out this entry
-    // }
 
     return (
         <>
@@ -26,14 +22,15 @@ function FavoritesList() {
             </table>
 
 
-            {/* <PlayerForm onSubmit={(player) => {
-                setPlayers([...players, player])
-            }} /> */} 
         </>
     )
 }
 
 export default FavoritesList;
+
+            {/* <Recipe onSubmit={(recipeItem) => {
+                setRecipeItems([...recipeItems, recipeItem])
+            }} />  */}
 
 // export default interface RecipeItem {
 //     hits: string;
