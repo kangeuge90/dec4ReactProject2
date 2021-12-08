@@ -1,7 +1,7 @@
 import './DisplayContainer.css'
 import nut from './assets/peanutAllergy.jpg';
 import gluten from './assets/glutenFree.jpg';
-import fish from './assets/seafoodAllergy.png';
+import egg from './assets/eggFree.png';
 import dairy from './assets/dairyFree.png'; 
 import soy from './assets/soyFree.png'
 import Recipe from './recipe' ;
@@ -22,7 +22,7 @@ function DisplayAllergies() {
                 </div>
                 <div className="categoryPicture" onClick = {() => {setQuery('"egg-free"')}}>
                     <h3>Egg Allergy</h3>
-                    <img src={fish} alt="seafood allergy"></img>
+                    <img src={egg} alt="egg free"></img>
                 </div>
                 <div className="categoryPicture" onClick = {() => {setQuery('"gluten-free"')}}>
                     <h3>Gluten Free</h3>
