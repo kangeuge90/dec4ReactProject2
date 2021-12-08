@@ -1,6 +1,6 @@
-import  RecipeItem from "./InterfaceRecipeItem";
+// import  RecipeItem from "./InterfaceRecipeItem";
 
-export interface RecipeDetails extends RecipeItem {
+export interface RecipeDetails {
     calories: number;
     dishType: string;
     ingredients: string;

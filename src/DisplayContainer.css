@@ -12,6 +12,11 @@
 }
 
 .categoryPicture img {
-    height: 13vw;
-    width: 13vw;
+    height: 16vw;
+    width: 16vw;
+}
+
+.categoryPicturesContainer h3 {
+    font-family: 'Caveat', cursive;
+    font-family: 'Homemade Apple', cursive;
 }
