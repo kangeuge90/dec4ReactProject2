@@ -33,7 +33,8 @@ const RecipeDetailItem = ({recipe}: IProps) => {
 
 
     return (
-        <div>
+        <div className="recipeListContainer">
+            
             <div className="recipeContainer">
             <p>{recipe.hits}</p>
                 <p>{recipe.label}

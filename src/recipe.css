@@ -3,11 +3,25 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw; */
+    background-color: rgb(228, 232, 247);
+    border-radius: 25px;
+    width: 35vw;
+    border: solid 2px rgb(20, 19, 19);
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .recipeContainer img {
-    height: 200px;
-    width: 200px;
+    height: 170px;
+    width: 170px;
+}
+
+.recipeListContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
 }
 
 .favoritesButton img {

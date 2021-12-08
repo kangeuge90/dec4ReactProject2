@@ -1,7 +1,16 @@
 .App {
     text-align: center;
     background-image: linear-gradient(to bottom right, #E7717d, #ec8892, #eeafb5);
+    min-height: 100vh;
+    height: 100%;
 }
+
+
+/* .backgroundGradient {
+    background-image: linear-gradient(to bottom right, #E7717d, #ec8892, #eeafb5);
+    height: fit-content;
+    width: fit-content;
+} */
 
 
 /* .categoriesContainer {

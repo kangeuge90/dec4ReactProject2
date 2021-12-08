@@ -170,7 +170,9 @@ function Header() {
                 {/* {meal===true && <DisplayMeal />} */}
                 {diet===true && <DisplayDiet />}
                 {allergies===true && <DisplayAllergies />}
+                {/* <hr className='bar'></hr> */}
             </div>
+            
         </div>
     )
 }

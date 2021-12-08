@@ -14,13 +14,13 @@
 }
 
 .recimeLogo img {
-    width: 125px;
-    height: 125px;
+    width: 115px;
+    height: 115px;
 }
 
 .recimeTitle img {
-    width: 600px;
-    height: 300px;
+    width: 500px;
+    height: 250px;
 }
 
 .searchBarContainer img {
@@ -143,4 +143,8 @@ hr {
 
 .subCategoriesContainer {
     background-image: linear-gradient(to right, #b4c6d3, #71a9d4);
+}
+
+.bar {
+    background-image: linear-gradient(to bottom right, #E7717d, #ec8892, #eeafb5);
 }
