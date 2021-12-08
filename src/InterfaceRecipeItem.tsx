@@ -6,4 +6,5 @@ export default interface RecipeItem {
     thumbNail?: string;
     // favorite: boolean;
     url?: string;
+    calories?: string;
 }

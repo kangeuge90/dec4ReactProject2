@@ -2,9 +2,11 @@ import axios from 'axios';
 import { type } from 'os';
 import { useState } from 'react';
 import RecipeItem from './InterfaceRecipeItem';
+import { RecipeDetails } from './RecipeDetails';
 
 export interface RecipeResponse {
     properties: {hits: RecipeItem[]};
+    details: RecipeDetails
 
 }
 
