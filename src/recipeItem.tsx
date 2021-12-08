@@ -7,6 +7,9 @@ import './recipe.css';
 import FullRecipeButton from './assets/fullrecipe.png'
 import MoreDetailsButton from './assets/moredetails.png'
 
+function float2int (value: any) {
+    return value | 0;
+}
 
 interface IProps {
     recipe: RecipeItem
@@ -17,7 +20,7 @@ interface IProps {
 const RecipeDetailItem = ({recipe}: IProps) => {
     const [areDetailsOpen, setDetailsOpen] = useState(false);
     const showMoreClickHandler = () => {setDetailsOpen(!areDetailsOpen)};
-    const details = (<div>Health Labels: {recipe.healthLabels[3]},{recipe.healthLabels[4]},{recipe.healthLabels[5]}<p>Calories: {recipe.calories}</p></div>); 
+    const details = (<div>Health Labels: {recipe.healthLabels[3]},{recipe.healthLabels[4]},{recipe.healthLabels[5]}<p>Dish Type: {recipe.dishType}</p><p>Calories: {float2int(recipe.calories)}</p></div>); 
     const {addFavorite} = useContext(FavoritesContext);
 
     function coupledFavoriteFunction() {

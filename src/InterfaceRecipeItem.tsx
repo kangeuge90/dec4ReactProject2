@@ -7,4 +7,5 @@ export default interface RecipeItem {
     // favorite: boolean;
     url?: string;
     calories?: string;
+    dishType?: string;
 }
