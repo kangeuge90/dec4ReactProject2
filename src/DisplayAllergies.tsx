@@ -37,7 +37,6 @@ function DisplayAllergies() {
                     <img src={soy} alt="soy allergy"></img>
                 </div>
             </div>
-            <hr></hr>
             {/* <div className='recipeList'>
                 <Recipe query={query}/>
             </div> */}
