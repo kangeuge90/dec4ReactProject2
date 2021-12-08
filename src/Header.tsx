@@ -18,6 +18,70 @@ import DietButton from './assets/diettype.png'
 import AllergiesButton from './assets/allergies.png'
 
 function Header() {
+    const [subcategories, setSubcategories] = useState(false)
+
+
+    function coupledCuisineFunctionFalse() {
+        clickCuisine(); 
+        setSubcategories(true);
+    }
+
+    function coupledDietFunctionFalse() {
+        clickDiet(); 
+        setSubcategories(true);
+    }
+
+    function coupledAllergiesFunctionFalse() {
+        clickAllergies(); 
+        setSubcategories(true);
+    }
+
+    function coupledCuisineFunctionTrue() {
+        setCuisineOn(false); 
+        setSubcategories(false);
+    }
+
+    function coupledDietFunctionTrue() {
+        setDietOn(false); 
+        setSubcategories(false);
+    }
+
+    function coupledAllergiesFunctionTrue() {
+        setAllergiesOn(false); 
+        setSubcategories(false);
+    }
+
+
+    
+
+    // function coupledMealFunctionFalse() {
+    //     clickMeal; 
+    //     setSubcategories(True);
+    // }
+
+    // function coupledMealFunctionTrue() {
+    //     clickMeal; 
+    //     setSubcategories(false);
+    // }
+
+    function offCuisine() {
+        setCuisineOn(false)
+    }
+
+    function offDiet() {
+        setDietOn(false)
+    }
+
+    // function offMeal() {
+    //     setMealOn(false)
+    // }
+
+    function offAllergies() {
+        setAllergiesOn(false)
+    }
+
+
+
     let [searchParams, setSearchParams] = useSearchParams();
     const setQuery = (q: string) => {
         setSearchParams({ 'query': q })
@@ -86,10 +150,19 @@ function Header() {
             <div className="categoriesContainer">
                 {/* <h2 className="sortText">Sort by: </h2> */}
                 <ul className="categoryButtons">
-                    <img src={CuisineButton}onClick={clickCuisine}></img>
+                    {subcategories===false
+                        ? <img src={CuisineButton}onClick={coupledCuisineFunctionFalse}></img>
+                        : <img src={CuisineButton}onClick={coupledCuisineFunctionTrue}></img>
+                    }
                     {/* <button onClick={clickMeal}>Meal Type</button> */}
-                    <img src={DietButton} onClick={clickDiet}></img>
-                    <img src={AllergiesButton} onClick={clickAllergies}></img>
+                    {subcategories===false
+                        ? <img src={DietButton}onClick={coupledDietFunctionFalse}></img>
+                        : <img src={DietButton}onClick={coupledDietFunctionTrue}></img>
+                    }
+                    {subcategories===false
+                        ? <img src={AllergiesButton}onClick={coupledAllergiesFunctionFalse}></img>
+                        : <img src={AllergiesButton}onClick={coupledAllergiesFunctionTrue}></img>
+                    }
                 </ul>
             </div>
             <div className="subCategoriesContainer">
