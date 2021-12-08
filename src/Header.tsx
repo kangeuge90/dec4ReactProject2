@@ -143,7 +143,7 @@ function Header() {
                             <Link to='/favorites'><img src={favoritesHeart}></img></Link>
                         </div>
                     </section>
-                    <img src={SearchText}></img><input value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
+                    <img src={SearchText}></img><input className="searchInput" value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
                 </div>
                 {/* Style adjustments needed here, to make appearance of favorites icon + text more cohesive */}
             </form>

@@ -131,6 +131,11 @@ hr {
     /* background-color: #FE6B35; */
 }
 
+.searchInput {
+    border: 3px solid black;
+    border-radius: 20px;
+}
+
 
 /* .categoriesContainer {
     background-image: linear-gradient(to right, #2b89d1, #71a9d4, #C2B9B0);
@@ -145,6 +150,7 @@ hr {
     background-image: linear-gradient(to right, #b4c6d3, #71a9d4);
 }
 
-.bar {
+
+/* .bar {
     background-image: linear-gradient(to bottom right, #E7717d, #ec8892, #eeafb5);
-}
+} */
