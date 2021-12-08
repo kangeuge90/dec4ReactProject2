@@ -6,6 +6,13 @@
     align-items: baseline;
 }
 
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
 .recimeLogo img {
     width: 125px;
     height: 125px;
@@ -41,6 +48,24 @@
     margin: 8px;
     height: 70px;
     width: 70px;
+}
+
+.categoriesContainer {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.categoryButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 600px;
+}
+
+.categoryButtons img {
+    height: 75px;
+    width: 150px;
 }
 
 
@@ -100,8 +125,22 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color: #A0EDff;
+    /* background-color: #A0EDff; */
     /* background-color: #EBF875; */
     /* background-color: #28CF75; */
     /* background-color: #FE6B35; */
+}
+
+
+/* .categoriesContainer {
+    background-image: linear-gradient(to right, #2b89d1, #71a9d4, #C2B9B0);
+} */
+
+
+/* .categoriesContainer {
+    background-color: #b4c6d3;
+} */
+
+.subCategoriesContainer {
+    background-image: linear-gradient(to right, #b4c6d3, #71a9d4);
 }

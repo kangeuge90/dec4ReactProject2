@@ -6,6 +6,8 @@ import favoritesHeart from './assets/rmfavselected.png'
 import './recipe.css'
 import { useSearchParams } from "react-router-dom";
 import FavoritesContext from "./FavoritesContext";
+import FullRecipeButton from './assets/fullrecipe.png'
+import MoreDetailsButton from './assets/moredetails.png'
 
 // export interface Props {
 // query: string;
@@ -37,9 +39,9 @@ function Recipe() {
                <p>{item.healthLabels[0]}, {item.healthLabels[1]}, {item.healthLabels[2]}</p>
                <img src={item.thumbNail}></img>
                <div className="detailsContainer">
-                    <Link to={item.label}>More Details</Link>
+                    <Link to={item.label}><img src={MoreDetailsButton}></img></Link>
                     <p></p>
-                    <a target='_blank' href={item.url}>Full recipe</a>
+                    <a target='_blank' href={item.url}><img src={FullRecipeButton}></img></a>
                     <p></p>
                </div>
            </form>)

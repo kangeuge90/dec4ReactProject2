@@ -38,8 +38,7 @@ function DisplayCuisine() {
                 <h3>Mexican</h3>
                 <img src={mexican} alt="mexican cuisine"></img>
             </div>
-        </div>    
-        <hr></hr>    
+        </div>     
         {/* <div className='recipeList'>
             <Recipe query={query}/>
         </div> */}
