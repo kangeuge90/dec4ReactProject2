@@ -1,24 +1,27 @@
-import { useState } from 'react';
+import { useState, useContext } from 'react';
 import RecipeItem from './InterfaceRecipeItem';
 // import PlayerForm from './PlayerForm';
 // import players from './players';
 import FavoritesListRow from './FavoritesListRow';
 import Recipe from './recipe';
-import { useContext } from 'react';
+import FavoriteTitle from './assets/favorites.png'
 import FavoritesContext from './FavoritesContext';
-
-
+import PrintIcon from './assets/rmprint.png'
+import SaveIcon from './assets/rmsave.png'
+import './FavoritesList.css'
 
 function FavoritesList() {
     const [recipeItems, setRecipeItems] = useState<RecipeItem[]>([
-        { label: "Peyton Manning", healthLabels: 'healthy', cuisineType: "American" }
+        { label: "Peyton Manning", healthLabels: '012', cuisineType: "American" }
     ]);
     const context = useContext(FavoritesContext);
     
 
     return (
-        <>
-            <h2>Your Favorites</h2>
+        <div className="favoritesListContainer">
+            <div className="favoritesListTitle">
+                <img src={FavoriteTitle}></img><div className="iconContainer"><img src={SaveIcon}></img><img src={PrintIcon}></img></div>
+            </div>
 
             <table>
                 <thead><td>Label</td><td>Health Labels</td><td>Cuisine Type</td><td>Full Recipe Link</td><td>Remove Favorite</td></thead>
@@ -29,8 +32,7 @@ function FavoritesList() {
                 {/* {context.favorites} */}
             </table>
 
-
-        </>
+        </div>
     )
 }
 
