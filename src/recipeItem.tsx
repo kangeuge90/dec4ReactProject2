@@ -21,29 +21,43 @@ const RecipeDetailItem = ({recipe}: IProps) => {
     const [areDetailsOpen, setDetailsOpen] = useState(false);
     const showMoreClickHandler = () => {setDetailsOpen(!areDetailsOpen)};
     const details = (<div>Health Labels: {recipe.healthLabels[3]},{recipe.healthLabels[4]},{recipe.healthLabels[5]}<p>Dish Type: {recipe.dishType}</p><p>Calories: {float2int(recipe.calories)}</p></div>); 
-    const {addFavorite} = useContext(FavoritesContext);
+    const {addFavorite, removeFavorite, favorites} = useContext(FavoritesContext);
 
-    function coupledFavoriteFunction() {
-        addFavorite(recipe); 
-        toggleFavorites();
-    }
+    // function coupledFavoriteFunction() {
+    //     addFavorite(recipe); 
+    //     toggleFavorites();
+    // }
 
-    const [favorites, setFavoritesTrue] = useState(false)
+    // function resetFavoritesFunction() {
+    //     for ()
+    // }
+
+    const isFavorited = favorites.some((favorite) => favorite.url===recipe.url)
+
+    // const [isFavorited, setFavoritesTrue] = useState(favoritedDefault)
 
     function toggleFavorites() {
-        setFavoritesTrue(!favorites);
+        // setFavoritesTrue(!favorites);
+        if (isFavorited === true) {
+            const index = favorites.findIndex((favorite) => favorite.url===recipe.url)
+            removeFavorite(index)
+        } else {
+            addFavorite(recipe)
+        }
     }
 
 
+    console.log(favorites.some((favorite) => favorite.url===recipe.url))
     return (
         <div className="recipeListContainer">
             
             <div className="recipeContainer">
             <p>{recipe.hits}</p>
+                <p>{isFavorited.toString()}</p>
                 <p>{recipe.label}
-                {favorites===false
-                    ? <span onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartFalse} ></img></span>
-                    : <span onClick={coupledFavoriteFunction} className="favoritesButton"><img src={favoritesHeartTrue} ></img></span>
+                {isFavorited===false
+                    ? <span onClick={toggleFavorites} className="favoritesButton"><img src={favoritesHeartFalse} ></img></span>
+                    : <span onClick={toggleFavorites} className="favoritesButton"><img src={favoritesHeartTrue} ></img></span>
                 }
                 </p>
                 <p>Cuisine Type: {recipe.cuisineType}</p>
