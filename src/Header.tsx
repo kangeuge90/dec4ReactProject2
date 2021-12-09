@@ -123,6 +123,13 @@ function Header() {
         setAllergiesOn(true)
     }
 
+    function resetCategories() {
+        setSubcategories(false)
+        setCuisineOn(false)
+        setDietOn(false)
+        setAllergiesOn(false)
+    }
+
     return (
         <div className="headerContainer">
             <div className='titleContainer'>
@@ -139,7 +146,7 @@ function Header() {
                 <div className="searchBar">
                     <section className='favoritesSection'>
                         <div className='favoritesInnerSection'>
-                            <Link to='/'><img src={HomeButton}></img></Link>
+                            <Link to='/'><img onClick={resetCategories} src={HomeButton}></img></Link>
                             <Link to='/favorites'><img src={favoritesHeart}></img></Link>
                         </div>
                     </section>
