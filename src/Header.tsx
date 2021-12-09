@@ -126,8 +126,8 @@ function Header() {
     return (
         <div className="headerContainer">
             <div className='titleContainer'>
-                <div className='recimeTitle'><img src={ReciMeTitle}></img></div>
-                <div className='recimeLogo'><img src={ReciMeLogo}></img></div>
+                <div className='recimeTitle'><img src={ReciMeTitle} alt="title"></img></div>
+                <div className='recimeLogo'><img src={ReciMeLogo} alt="logo"></img></div>
             </div>
             <form className="searchBarContainer" onSubmit={(e) => 
             {
@@ -139,11 +139,11 @@ function Header() {
                 <div className="searchBar">
                     <section className='favoritesSection'>
                         <div className='favoritesInnerSection'>
-                            <Link to='/'><img src={HomeButton}></img></Link>
-                            <Link to='/favorites'><img src={favoritesHeart}></img></Link>
+                            <Link to='/'><img src={HomeButton} alt="home"></img></Link>
+                            <Link to='/favorites'><img src={favoritesHeart} alt="favorites"></img></Link>
                         </div>
                     </section>
-                    <img src={SearchText}></img><input className="searchInput" value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
+                    <img src={SearchText} alt="search"></img><input className="searchInput" value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
                 </div>
                 {/* Style adjustments needed here, to make appearance of favorites icon + text more cohesive */}
             </form>
