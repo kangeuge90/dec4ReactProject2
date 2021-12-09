@@ -1,6 +1,7 @@
 import { useContext } from 'react';
 import FavoritesContext from './FavoritesContext';
 import RecipeItem from './InterfaceRecipeItem'
+import RemoveFavorite from './assets/rmfavselected2.png'
 
 function FavoritesListRow({ recipeItem: recipeItem, index }: { recipeItem: RecipeItem, index: number }) {
 
@@ -12,7 +13,7 @@ function FavoritesListRow({ recipeItem: recipeItem, index }: { recipeItem: Recip
             <td>{recipeItem.healthLabels[0]}, {recipeItem.healthLabels[1]}, {recipeItem.healthLabels[2]}</td>
             <td>{recipeItem.cuisineType}</td>
             <td><a href={recipeItem.url}>{recipeItem.url}</a></td>
-            <td><button onClick={ () => removeFavorite(index)}>Remove</button></td>
+            <td><img src={RemoveFavorite} onClick={ () => removeFavorite(index)}></img></td>
         </tr>
     )
 }
