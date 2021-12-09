@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Recipe from './recipe';
@@ -7,8 +7,12 @@ import Header from './Header';
 // import GetDetails from './GetDetails';
 // import Favorites from './Favorites';
 import FavoritesList from './FavoritesList';
+import FavoritesContext from './FavoritesContext';
 
 function App() {
+
+  // const context = useContext(FavoritesContext);
+  // console.log(context.favorites);
 
   return (
     <Router>
@@ -17,7 +21,7 @@ function App() {
       
         <Routes>
           <Route path='/' element={<Recipe />} />
-          <Route path="/favoritesList" element={<FavoritesList />} />
+          <Route path="/favorites" element={<FavoritesList />} />
         </Routes>
         
     </div>

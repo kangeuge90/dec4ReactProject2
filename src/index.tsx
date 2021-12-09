@@ -4,7 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import FavoritesContextProvider from './FavoritesContextProvider'
-import FavoriteContext from './FavoritesContext';
+// import FavoritesContext from './FavoritesContext';
+// import defaultValue from './FavoritesContext'
+
 
 ReactDOM.render(
   <React.StrictMode>

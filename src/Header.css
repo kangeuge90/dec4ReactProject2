@@ -154,3 +154,30 @@ hr {
 /* .bar {
     background-image: linear-gradient(to bottom right, #E7717d, #ec8892, #eeafb5);
 } */
+
+@media (max-width: 480px) {
+    .categoriesContainer {
+        width: 80vw;
+    }
+    .recimeLogo {
+        width: 80vw;
+    }
+    .recimeTitle {
+        width: 80vw;
+    }
+    .searchBar img {
+        width: 80px;
+        height: 60px;
+    }
+    .categoryButtons img {
+        width: 100px;
+    }
+    .recimeTitle img {
+        width: 250px;
+        height: 125px;
+    }
+    .favoritesInnerSection img {
+        width: 40px;
+        height: 40px;
+    }
+}

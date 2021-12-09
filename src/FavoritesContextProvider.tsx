@@ -1,6 +1,7 @@
 import { ReactNode, useState } from "react";
 import RecipeItem from './InterfaceRecipeItem'
 import FavoritesContext from './FavoritesContext'
+import { isContext } from "vm";
 
 interface Props { children: ReactNode; }
 
@@ -11,13 +12,15 @@ function FavoritesContextProvider({children}: Props) {
         setFavorites(prev => [...prev, favorite]);
     }
 
-    function removeFavorite() {
-        // slice out this entry
+    const removeFavorite = (i: number): void => {
+        setFavorites((prevFavorites) => {
+        return [...prevFavorites.slice(0, i), ...prevFavorites.slice(i + 1)];
+    })
     }
     // THIS MUST BE THE AREA FOR THIS FUNCTION TO APPLY CONTEXT TO ALL
 
     return (
-        <FavoritesContext.Provider value={{favorites, addFavorite}}>
+        <FavoritesContext.Provider value={{favorites, addFavorite, removeFavorite}}>
             {children}
         </FavoritesContext.Provider>
     )

@@ -38,3 +38,9 @@
 .recipeContainer {
     font-family: 'Arvo', serif;
 }
+
+@media (max-width: 480px) {
+    .recipeContainer {
+        width: 80vw;
+    }
+}

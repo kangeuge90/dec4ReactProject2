@@ -4,11 +4,17 @@ import RecipeItem from './InterfaceRecipeItem';
 // import players from './players';
 import FavoritesListRow from './FavoritesListRow';
 import Recipe from './recipe';
+import { useContext } from 'react';
+import FavoritesContext from './FavoritesContext';
+
+
 
 function FavoritesList() {
     const [recipeItems, setRecipeItems] = useState<RecipeItem[]>([
         { label: "Peyton Manning", healthLabels: 'healthy', cuisineType: "American" }
     ]);
+    const context = useContext(FavoritesContext);
+    
 
     return (
         <>
@@ -17,8 +23,10 @@ function FavoritesList() {
             <table>
                 <thead><td>Label</td><td>Health Labels</td><td>Cuisine Type</td><td>Full Recipe Link</td><td>Remove Favorite</td></thead>
                 {
-                    recipeItems.map((recipeItem) => <FavoritesListRow recipeItem={recipeItem} />)
+                    context.favorites.map((recipeItem, i) => <FavoritesListRow recipeItem={recipeItem} index={i}/>)
+                    
                 }
+                {/* {context.favorites} */}
             </table>
 
 
