@@ -53,7 +53,6 @@ const RecipeDetailItem = ({recipe}: IProps) => {
             
             <div className="recipeContainer">
             <p>{recipe.hits}</p>
-                <p>{isFavorited.toString()}</p>
                 <p>{recipe.label}
                 {isFavorited===false
                     ? <span onClick={toggleFavorites} className="favoritesButton"><img src={favoritesHeartFalse} ></img></span>
