@@ -166,11 +166,12 @@ hr {
         width: 80vw;
     }
     .searchBar img {
-        width: 80px;
-        height: 60px;
+        width: 60px;
+        height: 40px;
     }
     .categoryButtons img {
         width: 100px;
+        height: 60px;
     }
     .recimeTitle img {
         width: 250px;
@@ -179,5 +180,12 @@ hr {
     .favoritesInnerSection img {
         width: 40px;
         height: 40px;
+    }
+    .recimeLogo img {
+        width: 70px;
+        height: 70px;
+    }
+    .searchBarContainer input {
+        width: 40vw;
     }
 }
