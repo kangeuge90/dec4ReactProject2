@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dec4ReactProject2/static/css/main.457456b7.chunk.css",
-    "main.js": "/dec4ReactProject2/static/js/main.20e54ff9.chunk.js",
-    "main.js.map": "/dec4ReactProject2/static/js/main.20e54ff9.chunk.js.map",
-    "runtime-main.js": "/dec4ReactProject2/static/js/runtime-main.9776a1d1.js",
-    "runtime-main.js.map": "/dec4ReactProject2/static/js/runtime-main.9776a1d1.js.map",
+    "main.css": "/dec4ReactProject2/static/css/main.d1f10faa.chunk.css",
+    "main.js": "/dec4ReactProject2/static/js/main.a0d0b997.chunk.js",
+    "main.js.map": "/dec4ReactProject2/static/js/main.a0d0b997.chunk.js.map",
+    "runtime-main.js": "/dec4ReactProject2/static/js/runtime-main.3ea5ac58.js",
+    "runtime-main.js.map": "/dec4ReactProject2/static/js/runtime-main.3ea5ac58.js.map",
     "static/js/2.c9fae90e.chunk.js": "/dec4ReactProject2/static/js/2.c9fae90e.chunk.js",
     "static/js/2.c9fae90e.chunk.js.map": "/dec4ReactProject2/static/js/2.c9fae90e.chunk.js.map",
-    "static/js/3.49bdbf64.chunk.js": "/dec4ReactProject2/static/js/3.49bdbf64.chunk.js",
-    "static/js/3.49bdbf64.chunk.js.map": "/dec4ReactProject2/static/js/3.49bdbf64.chunk.js.map",
+    "static/js/3.a590f6b4.chunk.js": "/dec4ReactProject2/static/js/3.a590f6b4.chunk.js",
+    "static/js/3.a590f6b4.chunk.js.map": "/dec4ReactProject2/static/js/3.a590f6b4.chunk.js.map",
     "index.html": "/dec4ReactProject2/index.html",
-    "static/css/main.457456b7.chunk.css.map": "/dec4ReactProject2/static/css/main.457456b7.chunk.css.map",
+    "static/css/main.d1f10faa.chunk.css.map": "/dec4ReactProject2/static/css/main.d1f10faa.chunk.css.map",
     "static/js/2.c9fae90e.chunk.js.LICENSE.txt": "/dec4ReactProject2/static/js/2.c9fae90e.chunk.js.LICENSE.txt",
     "static/media/allergies.f283dbde.png": "/dec4ReactProject2/static/media/allergies.f283dbde.png",
     "static/media/americanCuisine.f7618218.jpg": "/dec4ReactProject2/static/media/americanCuisine.f7618218.jpg",
@@ -25,12 +25,10 @@
     "static/media/italianCuisine.32fedd98.png": "/dec4ReactProject2/static/media/italianCuisine.32fedd98.png",
     "static/media/keto.afd376fd.jpg": "/dec4ReactProject2/static/media/keto.afd376fd.jpg",
     "static/media/kosher.e5055464.png": "/dec4ReactProject2/static/media/kosher.e5055464.png",
-    "static/media/madeby.4bf636b5.png": "/dec4ReactProject2/static/media/madeby.4bf636b5.png",
     "static/media/mexicanCuisine.cfaab9eb.jpg": "/dec4ReactProject2/static/media/mexicanCuisine.cfaab9eb.jpg",
     "static/media/moredetails.ac66ecd3.png": "/dec4ReactProject2/static/media/moredetails.ac66ecd3.png",
     "static/media/peanutAllergy.5c8c50d5.jpg": "/dec4ReactProject2/static/media/peanutAllergy.5c8c50d5.jpg",
     "static/media/pescatarian.f74ea890.jpg": "/dec4ReactProject2/static/media/pescatarian.f74ea890.jpg",
-    "static/media/rmcredits.2b978262.png": "/dec4ReactProject2/static/media/rmcredits.2b978262.png",
     "static/media/rmfavselected2.eb0c6caa.png": "/dec4ReactProject2/static/media/rmfavselected2.eb0c6caa.png",
     "static/media/rmfavunselected.cc7c0c61.png": "/dec4ReactProject2/static/media/rmfavunselected.cc7c0c61.png",
     "static/media/rmheader2.b607e7d4.png": "/dec4ReactProject2/static/media/rmheader2.b607e7d4.png",
@@ -44,9 +42,9 @@
     "static/media/vegetarian.aa820d4e.jpg": "/dec4ReactProject2/static/media/vegetarian.aa820d4e.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.9776a1d1.js",
+    "static/js/runtime-main.3ea5ac58.js",
     "static/js/2.c9fae90e.chunk.js",
-    "static/css/main.457456b7.chunk.css",
-    "static/js/main.20e54ff9.chunk.js"
+    "static/css/main.d1f10faa.chunk.css",
+    "static/js/main.a0d0b997.chunk.js"
   ]
 }
