@@ -14,6 +14,7 @@
 .categoryPicture img {
     height: 16vw;
     width: 16vw;
+    border-radius: 10px;
 }
 
 .categoryPicturesContainer h3 {

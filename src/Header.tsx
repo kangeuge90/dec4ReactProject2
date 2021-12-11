@@ -133,6 +133,7 @@ function Header() {
 
     function coupledFavoritesOnClick() {
         setFavorites(true)
+        setSubcategories(false)
         resetCategories();
     }
 
