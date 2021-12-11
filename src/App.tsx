@@ -26,7 +26,7 @@ function App() {
           <Route path="/dec4ReactProject2/favorites" element={<FavoritesList />} />
         </Routes>
 
-      <Footer />
+      {/* <Footer /> */}
 
     </div>
     
