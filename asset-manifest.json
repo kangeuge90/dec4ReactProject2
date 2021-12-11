@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/dec4ReactProject2/static/css/main.0ee2816f.chunk.css",
+    "main.css": "/dec4ReactProject2/static/css/main.93887a7d.chunk.css",
     "main.js": "/dec4ReactProject2/static/js/main.a0d0b997.chunk.js",
     "main.js.map": "/dec4ReactProject2/static/js/main.a0d0b997.chunk.js.map",
     "runtime-main.js": "/dec4ReactProject2/static/js/runtime-main.3ea5ac58.js",
@@ -10,7 +10,7 @@
     "static/js/3.a590f6b4.chunk.js": "/dec4ReactProject2/static/js/3.a590f6b4.chunk.js",
     "static/js/3.a590f6b4.chunk.js.map": "/dec4ReactProject2/static/js/3.a590f6b4.chunk.js.map",
     "index.html": "/dec4ReactProject2/index.html",
-    "static/css/main.0ee2816f.chunk.css.map": "/dec4ReactProject2/static/css/main.0ee2816f.chunk.css.map",
+    "static/css/main.93887a7d.chunk.css.map": "/dec4ReactProject2/static/css/main.93887a7d.chunk.css.map",
     "static/js/2.c9fae90e.chunk.js.LICENSE.txt": "/dec4ReactProject2/static/js/2.c9fae90e.chunk.js.LICENSE.txt",
     "static/media/allergies.f283dbde.png": "/dec4ReactProject2/static/media/allergies.f283dbde.png",
     "static/media/americanCuisine.f7618218.jpg": "/dec4ReactProject2/static/media/americanCuisine.f7618218.jpg",
@@ -44,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.3ea5ac58.js",
     "static/js/2.c9fae90e.chunk.js",
-    "static/css/main.0ee2816f.chunk.css",
+    "static/css/main.93887a7d.chunk.css",
     "static/js/main.a0d0b997.chunk.js"
   ]
 }
