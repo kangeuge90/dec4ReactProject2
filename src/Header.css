@@ -160,10 +160,10 @@ hr {
         width: 80vw;
     }
     .recimeLogo {
-        width: 80vw;
+        width: 75vw;
     }
     .recimeTitle {
-        width: 80vw;
+        width: 75vw;
     }
     .searchBar img {
         width: 60px;
@@ -186,6 +186,6 @@ hr {
         height: 70px;
     }
     .searchBarContainer input {
-        width: 40vw;
+        width: 36vw;
     }
 }
