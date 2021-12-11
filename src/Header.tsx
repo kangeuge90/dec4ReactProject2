@@ -19,6 +19,7 @@ import AllergiesButton from './assets/allergies.png'
 
 function Header() {
     const [subcategories, setSubcategories] = useState(false)
+    const [favorites, setFavorites] = useState(false)
 
 
     function coupledCuisineFunctionFalse() {
@@ -146,15 +147,16 @@ function Header() {
                 <div className="searchBar">
                     <section className='favoritesSection'>
                         <div className='favoritesInnerSection'>
-                            <Link to='/'><img alt="home" onClick={resetCategories} src={HomeButton}></img></Link>
-                            <Link to='/favorites'><img alt="favorites" src={favoritesHeart}></img></Link>
+                            <Link to='/dec4ReactProject2/' onClick={() => {setFavorites(false)}}><img alt="home" onClick={resetCategories} src={HomeButton}></img></Link>
+                            <Link to='/dec4ReactProject2/favorites' onClick={() => {setFavorites(true)}}><img alt="favorites" src={favoritesHeart}></img></Link>
                         </div>
                     </section>
                     <img src={SearchText} alt="search"></img><input className="searchInput" value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
                 </div>
                 {/* Style adjustments needed here, to make appearance of favorites icon + text more cohesive */}
             </form>
-            <div className="categoriesContainer">
+            {favorites=== false
+            && <div className="categoriesContainer">
                 {/* <h2 className="sortText">Sort by: </h2> */}
                 <ul className="categoryButtons">
                     {subcategories===false
@@ -172,6 +174,7 @@ function Header() {
                     }
                 </ul>
             </div>
+            }
             <div className="subCategoriesContainer">
                 {cuisine===true && <DisplayCuisine />}
                 {/* {meal===true && <DisplayMeal />} */}
