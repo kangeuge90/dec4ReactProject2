@@ -131,6 +131,11 @@ function Header() {
         setAllergiesOn(false)
     }
 
+    function coupledFavoritesOnClick() {
+        setFavorites(true)
+        resetCategories;
+    }
+
     return (
         <div className="headerContainer">
             <div className='titleContainer'>
@@ -148,7 +153,7 @@ function Header() {
                     <section className='favoritesSection'>
                         <div className='favoritesInnerSection'>
                             <Link to='/dec4ReactProject2/' onClick={() => {setFavorites(false)}}><img alt="home" onClick={resetCategories} src={HomeButton}></img></Link>
-                            <Link to='/dec4ReactProject2/favorites' onClick={() => {setFavorites(true)}}><img alt="favorites" src={favoritesHeart}></img></Link>
+                            <Link to='/dec4ReactProject2/favorites' onClick={coupledFavoritesOnClick}><img alt="favorites" src={favoritesHeart}></img></Link>
                         </div>
                     </section>
                     <img src={SearchText} alt="search"></img><input className="searchInput" value={searchQuery} onChange={(e)=>setSearchQuery(e.target.value)}/>
