@@ -24,8 +24,8 @@
 }
 
 .searchBarContainer img {
-    height: 150px;
-    width: 150px;
+    height: 125px;
+    width: 125px;
     margin: 6px;
 }
 
@@ -35,8 +35,8 @@
 }
 
 .searchBar img {
-    height: 75px;
-    width: 150px;
+    height: 62.5px;
+    width: 125px;
 }
 
 .favoritesInnerSection {
