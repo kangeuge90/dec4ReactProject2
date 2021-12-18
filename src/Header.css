@@ -68,6 +68,11 @@
     width: 150px;
 }
 
+.categoryButtons img:hover,
+img:focus {
+    transform: scale(1.20);
+}
+
 
 /* .categoryButtons button {
     padding: 6px;
@@ -106,7 +111,7 @@
 
 @media (min-width: 768px) {
     .categoryButtons button {
-        min-width: 120px;
+        min-width: 90px;
         padding: 0 25px;
     }
 }

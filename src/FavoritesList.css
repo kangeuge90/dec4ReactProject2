@@ -62,5 +62,6 @@ td img {
     }
     table {
         font-size: 43%;
+        max-width: 90vw;
     }
 }

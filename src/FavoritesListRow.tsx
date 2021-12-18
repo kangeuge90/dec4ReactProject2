@@ -12,7 +12,7 @@ function FavoritesListRow({ recipeItem: recipeItem, index }: { recipeItem: Recip
             <td>{recipeItem.label}</td>
             <td>{recipeItem.healthLabels[0]}, {recipeItem.healthLabels[1]}, {recipeItem.healthLabels[2]}</td>
             <td>{recipeItem.cuisineType}</td>
-            <td><a href={recipeItem.url}>{recipeItem.url}</a></td>
+            <td><a href={recipeItem.url}>Link</a></td>
             <td><img src={RemoveFavorite} onClick={ () => removeFavorite(index)}></img></td>
         </tr>
     )
